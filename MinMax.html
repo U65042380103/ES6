@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Find Min and Max</h2>
+
+<p>Arrow functions are not supported in IE11 or earlier.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script> 
+
+function max(x,y){
+if (x>y){
+    return x;
+}
+else{
+    return y;
+}
+}
+min = (x,y) => (x<=y) ? x : y ;
+document.getElementById("demo1").innerHTML = max(10, 5);
+document.getElementById("demo2").innerHTML = min(10, 5);
+
+</script>
+
+</body>
+</html>

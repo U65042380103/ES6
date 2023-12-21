@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sum of 1 to N</h2>
+
+<p>First line is normal function and 2nd line is Arrow function.</p>
+ 
+<p id="demo1"></p>
+<p id="demo2"></p> 
+
+<script> 
+
+function sum1(n){
+    let sum = 0 ;
+    let i;
+    for (i =1; i <= n; i++) {
+        sum+=i ; 
+    }
+    return sum; 
+ 
+}
+sum2 = (n) =>{ 
+    let sum=0;   
+    let i;
+    for ( i = 1; i <= n; i++)
+    {s += i ;} }
+    return   s;
+document.getElementById("demo1").innerHTML = sum1(10);
+document.getElementById("demo2").innerHTML = sum2(10);
+
+</script>
+
+</body>
+</html> 
